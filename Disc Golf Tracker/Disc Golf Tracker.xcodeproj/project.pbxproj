@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7907E09F24539B5900801B30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7907E09E24539B5900801B30 /* AppDelegate.swift */; };
+		7907E0A124539B5900801B30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7907E0A024539B5900801B30 /* SceneDelegate.swift */; };
+		7907E0A624539B5900801B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7907E0A424539B5900801B30 /* Main.storyboard */; };
+		7907E0A824539B5A00801B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7907E0A724539B5A00801B30 /* Assets.xcassets */; };
+		7907E0AB24539B5A00801B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7907E0A924539B5A00801B30 /* LaunchScreen.storyboard */; };
+		79F94A4F24588A6B006EF958 /* DiscGolfTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A4E24588A6B006EF958 /* DiscGolfTableViewController.swift */; };
+		79F94A5124588AAA006EF958 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A5024588AAA006EF958 /* NewGameViewController.swift */; };
+		79F94A532458A293006EF958 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A522458A293006EF958 /* GamesTableViewCell.swift */; };
+		79F94A552458A2C6006EF958 /* HolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A542458A2C6006EF958 /* HolesViewController.swift */; };
+		79F94A572458A2EE006EF958 /* HolesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A562458A2EE006EF958 /* HolesTableViewCell.swift */; };
+		79F94A5D2458A3DE006EF958 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F94A5C2458A3DE006EF958 /* Default-568h@2x.png */; };
+		79F94A5F2458A6D0006EF958 /*  NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A5E2458A6D0006EF958 /*  NewGame.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7907E09B24539B5900801B30 /* Disc Golf Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Disc Golf Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7907E09E24539B5900801B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7907E0A024539B5900801B30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7907E0A524539B5900801B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7907E0A724539B5A00801B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7907E0AA24539B5A00801B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7907E0AC24539B5A00801B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F94A4E24588A6B006EF958 /* DiscGolfTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscGolfTableViewController.swift; sourceTree = "<group>"; };
+		79F94A5024588AAA006EF958 /* NewGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
+		79F94A522458A293006EF958 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
+		79F94A542458A2C6006EF958 /* HolesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolesViewController.swift; sourceTree = "<group>"; };
+		79F94A562458A2EE006EF958 /* HolesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolesTableViewCell.swift; sourceTree = "<group>"; };
+		79F94A5C2458A3DE006EF958 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		79F94A5E2458A6D0006EF958 /*  NewGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " NewGame.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7907E09824539B5900801B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7907E09224539B5900801B30 = {
+			isa = PBXGroup;
+			children = (
+				79F94A5C2458A3DE006EF958 /* Default-568h@2x.png */,
+				7907E09D24539B5900801B30 /* Disc Golf Tracker */,
+				7907E09C24539B5900801B30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7907E09C24539B5900801B30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7907E09B24539B5900801B30 /* Disc Golf Tracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7907E09D24539B5900801B30 /* Disc Golf Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				79F94A5B2458A375006EF958 /* Storybaords */,
+				79F94A5A2458A368006EF958 /* View Cell */,
+				79F94A582458A337006EF958 /* View Controllers */,
+				79F94A592458A34E006EF958 /* Resources */,
+			);
+			path = "Disc Golf Tracker";
+			sourceTree = "<group>";
+		};
+		79F94A582458A337006EF958 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79F94A4E24588A6B006EF958 /* DiscGolfTableViewController.swift */,
+				79F94A542458A2C6006EF958 /* HolesViewController.swift */,
+				79F94A5024588AAA006EF958 /* NewGameViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		79F94A592458A34E006EF958 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7907E09E24539B5900801B30 /* AppDelegate.swift */,
+				7907E0A724539B5A00801B30 /* Assets.xcassets */,
+				7907E0A024539B5900801B30 /* SceneDelegate.swift */,
+				7907E0A924539B5A00801B30 /* LaunchScreen.storyboard */,
+				7907E0AC24539B5A00801B30 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		79F94A5A2458A368006EF958 /* View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				79F94A562458A2EE006EF958 /* HolesTableViewCell.swift */,
+				79F94A522458A293006EF958 /* GamesTableViewCell.swift */,
+			);
+			path = "View Cell";
+			sourceTree = "<group>";
+		};
+		79F94A5B2458A375006EF958 /* Storybaords */ = {
+			isa = PBXGroup;
+			children = (
+				7907E0A424539B5900801B30 /* Main.storyboard */,
+				79F94A5E2458A6D0006EF958 /*  NewGame.swift */,
+			);
+			path = Storybaords;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7907E09A24539B5900801B30 /* Disc Golf Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7907E0AF24539B5A00801B30 /* Build configuration list for PBXNativeTarget "Disc Golf Tracker" */;
+			buildPhases = (
+				7907E09724539B5900801B30 /* Sources */,
+				7907E09824539B5900801B30 /* Frameworks */,
+				7907E09924539B5900801B30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Disc Golf Tracker";
+			productName = "Disc Golf Tracker";
+			productReference = 7907E09B24539B5900801B30 /* Disc Golf Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7907E09324539B5900801B30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Enzo Jimenez-Soto";
+				TargetAttributes = {
+					7907E09A24539B5900801B30 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 7907E09624539B5900801B30 /* Build configuration list for PBXProject "Disc Golf Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7907E09224539B5900801B30;
+			productRefGroup = 7907E09C24539B5900801B30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7907E09A24539B5900801B30 /* Disc Golf Tracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7907E09924539B5900801B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7907E0AB24539B5A00801B30 /* LaunchScreen.storyboard in Resources */,
+				79F94A5D2458A3DE006EF958 /* Default-568h@2x.png in Resources */,
+				7907E0A824539B5A00801B30 /* Assets.xcassets in Resources */,
+				7907E0A624539B5900801B30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7907E09724539B5900801B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7907E09F24539B5900801B30 /* AppDelegate.swift in Sources */,
+				79F94A5124588AAA006EF958 /* NewGameViewController.swift in Sources */,
+				79F94A572458A2EE006EF958 /* HolesTableViewCell.swift in Sources */,
+				79F94A552458A2C6006EF958 /* HolesViewController.swift in Sources */,
+				7907E0A124539B5900801B30 /* SceneDelegate.swift in Sources */,
+				79F94A5F2458A6D0006EF958 /*  NewGame.swift in Sources */,
+				79F94A532458A293006EF958 /* GamesTableViewCell.swift in Sources */,
+				79F94A4F24588A6B006EF958 /* DiscGolfTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7907E0A424539B5900801B30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7907E0A524539B5900801B30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7907E0A924539B5A00801B30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7907E0AA24539B5A00801B30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7907E0AD24539B5A00801B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7907E0AE24539B5A00801B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7907E0B024539B5A00801B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59V75HSK6N;
+				INFOPLIST_FILE = "/Users/mainbitch/Documents/Build Week/Disc-Golf-Score-Tracker/Disc Golf Tracker/Disc Golf Tracker/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EnzoJimenezSoto.Disc-Golf-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7907E0B124539B5A00801B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59V75HSK6N;
+				INFOPLIST_FILE = "/Users/mainbitch/Documents/Build Week/Disc-Golf-Score-Tracker/Disc Golf Tracker/Disc Golf Tracker/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EnzoJimenezSoto.Disc-Golf-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7907E09624539B5900801B30 /* Build configuration list for PBXProject "Disc Golf Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7907E0AD24539B5A00801B30 /* Debug */,
+				7907E0AE24539B5A00801B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7907E0AF24539B5A00801B30 /* Build configuration list for PBXNativeTarget "Disc Golf Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7907E0B024539B5A00801B30 /* Debug */,
+				7907E0B124539B5A00801B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7907E09324539B5900801B30 /* Project object */;
+}
