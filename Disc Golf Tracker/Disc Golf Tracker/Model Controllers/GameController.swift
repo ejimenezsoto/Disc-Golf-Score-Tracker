@@ -18,10 +18,10 @@ class GameController {
     //MARK : - Public Methods
     //Create
     @discardableResult public func addGame(game: Game) -> Game {
-           games.append(game)
-           //saveToPersistentStore()
-           return game
-       }
+        games.append(game)
+        //saveToPersistentStore()
+        return game
+    }
     @discardableResult public func addGame(name: String, numPlayers: Int, numHoles: Int) -> Game {
         let game = Game(numHoles: numHoles, numPlayers: numPlayers, name: name)
         games.append(game)

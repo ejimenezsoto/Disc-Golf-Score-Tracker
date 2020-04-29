@@ -13,7 +13,7 @@ protocol  AddNewGameDelegate {
 }
 
 class NewGameViewController: UIViewController {
-
+    
     
     var delegate: AddNewGameDelegate?
     
@@ -24,9 +24,9 @@ class NewGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
-
+    
     @IBAction func createScorecardTapped(_ sender: Any) {
         
         
@@ -36,8 +36,8 @@ class NewGameViewController: UIViewController {
             let numberOfPlayers = numberOfPlayersTextField.text, !numberOfPlayers.isEmpty,
             let numberOfPlayersInt = Int(numberOfPlayers) else {return}
         
-
-            
+        
+        
         
         let newGame = Game(numHoles: numberOfHolesInt, numPlayers: numberOfPlayersInt, name: courseName)
         
@@ -46,7 +46,7 @@ class NewGameViewController: UIViewController {
         navigationController?.popViewController(animated: true)
         
         
-    
+        
     }
 }
 

@@ -26,35 +26,41 @@ class HolesTableViewController: UITableViewController {
     //MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
+        
     }
     
     @IBAction func segmentedValueChanged(_ sender: Any) {
         self.currentPlayer = mySegmentedControl.selectedSegmentIndex
     }
     
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return game?.holes.count ?? 0
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       guard let cell = tableView.dequeueReusableCell(withIdentifier: "HolesViewCell", for: indexPath) as? HolesTableViewCell else {fatalError()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "HolesViewCell", for: indexPath) as? HolesTableViewCell else {fatalError()}
         
         cell.hole = game?.holes[indexPath.row]
         cell.delegate = self
         cell.currentPlayer = currentPlayer
         
+        
+        
+        
         return cell
+        
+        
+        
     }
 }
 
@@ -62,7 +68,7 @@ extension HolesTableViewController: HolesTableViewCellDelegate {
     func strokesEdited(hole: Hole, player: Int, strokes: Int) {
         guard let game = game else { return }
         gameController?.updateStrokes(for: hole, player: player, game: game, strokes: strokes)
-        //Refresh data?
+        
     }
     
     func parEdited(par: Int) {
@@ -70,6 +76,6 @@ extension HolesTableViewController: HolesTableViewCellDelegate {
     }
 }
 
- 
+
 
 

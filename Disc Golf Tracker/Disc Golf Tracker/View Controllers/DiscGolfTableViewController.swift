@@ -36,7 +36,7 @@ class DiscGolfTableViewController: UITableViewController {
         else if segue.identifier == "showHolesSegue"{
             guard let holesVC = segue.destination as? HolesTableViewController,
                 let indexPath = tableView.indexPathForSelectedRow
-            else {return}
+                else {return}
             
             holesVC.game = gameController.games[indexPath.row]
             

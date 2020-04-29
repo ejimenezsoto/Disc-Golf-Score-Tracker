@@ -16,7 +16,7 @@ protocol HolesTableViewCellDelegate {
 class HolesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var holeNumberLabel: UILabel!
-   
+    
     @IBOutlet weak var strokesTextField: UITextField!
     
     @IBOutlet weak var parTextField: UITextField!
@@ -39,9 +39,9 @@ class HolesTableViewCell: UITableViewCell {
     
     @IBAction func holesEdited(_ sender: UITextField) {
         guard let strokesText = strokesTextField.text,
-        let strokes = Int(strokesText),
-        let hole = hole,
-        let player = currentPlayer else { return }
+            let strokes = Int(strokesText),
+            let hole = hole,
+            let player = currentPlayer else { return }
         delegate?.strokesEdited(hole: hole,player: player, strokes: strokes)
     }
     
