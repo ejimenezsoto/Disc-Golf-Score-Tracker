@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Hole: Codable {
+struct Hole: Codable, Equatable {
     let number: Int
     var par: Int = 3
     var strokes: [Int?] = []
@@ -39,5 +39,10 @@ struct Game : Codable {
             newHoles.append(newHole)
         }
         holes = newHoles
+    }
+}
+extension Game: Equatable {
+    static func == (lhs: Game, rhs: Game) -> Bool {
+        return lhs.name == rhs.name
     }
 }

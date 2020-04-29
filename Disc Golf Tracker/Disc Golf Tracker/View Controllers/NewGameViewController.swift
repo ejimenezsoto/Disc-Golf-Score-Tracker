@@ -15,7 +15,7 @@ protocol  AddNewGameDelegate {
 class NewGameViewController: UIViewController {
 
     
-    var delagate: AddNewGameDelegate?
+    var delegate: AddNewGameDelegate?
     
     @IBOutlet weak var courseNameTextField: UITextField!
     @IBOutlet weak var numberOfHolesTextField: UITextField!
@@ -41,7 +41,7 @@ class NewGameViewController: UIViewController {
         
         let newGame = Game(numHoles: numberOfHolesInt, numPlayers: numberOfPlayersInt, name: courseName)
         
-        delagate?.newGameWasAdded(newGame: newGame)
+        delegate?.newGameWasAdded(newGame: newGame)
         
         navigationController?.popViewController(animated: true)
         

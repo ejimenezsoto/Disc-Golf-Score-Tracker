@@ -31,7 +31,7 @@ class DiscGolfTableViewController: UITableViewController {
         if segue.identifier == "showNewGameSegue" {
             guard let newGameVC = segue.destination as? NewGameViewController else {return}
             
-            newGameVC.delagate = self
+            newGameVC.delegate = self
         }
         else if segue.identifier == "showHolesSegue"{
             guard let holesVC = segue.destination as? HolesTableViewController,

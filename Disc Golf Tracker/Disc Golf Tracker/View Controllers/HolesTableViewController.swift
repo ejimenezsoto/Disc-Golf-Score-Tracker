@@ -17,7 +17,11 @@ class HolesTableViewController: UITableViewController {
     //MARK: - Properties
     var gameController: GameController? = GameController()
     var game: Game?
-    var currentUser = 0
+    private var currentPlayer = 0 {
+        didSet{
+            tableView.reloadData()
+        }
+    }
     
     //MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -27,7 +31,7 @@ class HolesTableViewController: UITableViewController {
     }
     
     @IBAction func segmentedValueChanged(_ sender: Any) {
-        //Do Something
+        self.currentPlayer = mySegmentedControl.selectedSegmentIndex
     }
     
 
@@ -48,22 +52,22 @@ class HolesTableViewController: UITableViewController {
         
         cell.hole = game?.holes[indexPath.row]
         cell.delegate = self
-        cell.currentPlayer = currentUser
+        cell.currentPlayer = currentPlayer
         
         return cell
     }
 }
 
 extension HolesTableViewController: HolesTableViewCellDelegate {
-    func strokesEdited(strokes: Int) {
-        //game.updateStrokesForHole(hole: Hole, strokes: Int)
+    func strokesEdited(hole: Hole, player: Int, strokes: Int) {
+        guard let game = game else { return }
+        gameController?.updateStrokes(for: hole, player: player, game: game, strokes: strokes)
+        //Refresh data?
     }
     
     func parEdited(par: Int) {
         
     }
-    
-    
 }
 
  
