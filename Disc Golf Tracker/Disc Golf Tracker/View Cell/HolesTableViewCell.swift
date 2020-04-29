@@ -8,27 +8,36 @@
 
 import UIKit
 
-class HolesTableViewCell: UITableViewCell {
+protocol HolesTableViewCellDelegate {
+    func strokesEdited(strokes: Int)
+    func parEdited(par: Int)
+}
 
-    @IBOutlet weak var holeNumberTableLabel: UILabel!
+class HolesTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var strokesStepper: UIStepper!
-    
-    
-    @IBOutlet weak var parStepper: UIStepper!
-    
+    @IBOutlet weak var holeNumberLabel: UILabel!
+   
     @IBOutlet weak var strokesTextField: UITextField!
     
     @IBOutlet weak var parTextField: UITextField!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    public var hole: Hole? {
+        didSet {
+            updateViews()
+        }
     }
-      override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    public var currentPlayer: Int?
+    
+    var delegate: HolesTableViewCellDelegate?
+    
+    func updateViews() {
+        guard let hole = hole else { return }
+        holeNumberLabel.text = "Hole \(hole.number)"
+        strokesTextField.text = "\(hole.strokes[0] ?? 0)"
+        parTextField.text = "\(hole.par)"
     }
-
+    @IBAction func holesEdited(_ sender: UITextField) {
+        
+    }
+    
 }

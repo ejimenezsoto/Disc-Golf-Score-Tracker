@@ -9,43 +9,50 @@
 import UIKit
 
 class DiscGolfTableViewController: UITableViewController {
+    var gameController = GameController()
     
-    var newGameArray: [NewGame] = [NewGame(courseName: "DeLa Vega Disc Golf Course", numberOfHoles: "18 holes", numberOfPlayers: "3 players")]
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "newGameSegue" {
-            guard let newGameVC = segue.destination as? NewGameViewController else {return}
-            newGameVC.delagate = self
-        
-        }
-
+        tableView.reloadData()
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newGameArray.count
+        return gameController.games.count
         
     }
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "GamesTableViewCell", for: indexPath) as? GamesTableViewCell else {fatalError("oops")}
         
-        let newGame = newGameArray[indexPath.row]
-        cell.newGame = newGame
+        let game = gameController.games[indexPath.row]
+        cell.game = game
         return cell
-            }
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showNewGameSegue" {
+            guard let newGameVC = segue.destination as? NewGameViewController else {return}
+            
+            newGameVC.delagate = self
+        }
+        else if segue.identifier == "showHolesSegue"{
+            guard let holesVC = segue.destination as? HolesTableViewController,
+                let indexPath = tableView.indexPathForSelectedRow
+            else {return}
+            
+            holesVC.game = gameController.games[indexPath.row]
+            
+        }
+    }
+    
+    
     
 }
+
 extension DiscGolfTableViewController: AddNewGameDelegate {
-    func newGameWasAdded(newGame: NewGame) {
-        newGameArray.append(newGame)
+    func newGameWasAdded(newGame: Game) {
+        gameController.addGame(game: newGame)
         tableView.reloadData()
     }
 }
+
+
+

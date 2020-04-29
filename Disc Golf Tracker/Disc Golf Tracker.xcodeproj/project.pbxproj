@@ -12,13 +12,14 @@
 		7907E0A624539B5900801B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7907E0A424539B5900801B30 /* Main.storyboard */; };
 		7907E0A824539B5A00801B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7907E0A724539B5A00801B30 /* Assets.xcassets */; };
 		7907E0AB24539B5A00801B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7907E0A924539B5A00801B30 /* LaunchScreen.storyboard */; };
+		79D9F7C1245A18BF00860B97 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A66245A0B00006EF958 /* GameController.swift */; };
 		79F94A4F24588A6B006EF958 /* DiscGolfTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A4E24588A6B006EF958 /* DiscGolfTableViewController.swift */; };
 		79F94A5124588AAA006EF958 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A5024588AAA006EF958 /* NewGameViewController.swift */; };
 		79F94A532458A293006EF958 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A522458A293006EF958 /* GamesTableViewCell.swift */; };
-		79F94A552458A2C6006EF958 /* HolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A542458A2C6006EF958 /* HolesViewController.swift */; };
 		79F94A572458A2EE006EF958 /* HolesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A562458A2EE006EF958 /* HolesTableViewCell.swift */; };
 		79F94A5D2458A3DE006EF958 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F94A5C2458A3DE006EF958 /* Default-568h@2x.png */; };
-		79F94A5F2458A6D0006EF958 /*  NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A5E2458A6D0006EF958 /*  NewGame.swift */; };
+		79F94A612458C5FC006EF958 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A602458C5FC006EF958 /* Game.swift */; };
+		79F94A6324593373006EF958 /* HolesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A6224593373006EF958 /* HolesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +33,11 @@
 		79F94A4E24588A6B006EF958 /* DiscGolfTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscGolfTableViewController.swift; sourceTree = "<group>"; };
 		79F94A5024588AAA006EF958 /* NewGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
 		79F94A522458A293006EF958 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
-		79F94A542458A2C6006EF958 /* HolesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolesViewController.swift; sourceTree = "<group>"; };
 		79F94A562458A2EE006EF958 /* HolesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolesTableViewCell.swift; sourceTree = "<group>"; };
 		79F94A5C2458A3DE006EF958 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		79F94A5E2458A6D0006EF958 /*  NewGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " NewGame.swift"; sourceTree = "<group>"; };
+		79F94A602458C5FC006EF958 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		79F94A6224593373006EF958 /* HolesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolesTableViewController.swift; sourceTree = "<group>"; };
+		79F94A66245A0B00006EF958 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,8 @@
 		7907E09D24539B5900801B30 /* Disc Golf Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				79F94A65245A0AD8006EF958 /* Model Controllers */,
+				79F94A64245A0793006EF958 /* Models */,
 				79F94A5B2458A375006EF958 /* Storybaords */,
 				79F94A5A2458A368006EF958 /* View Cell */,
 				79F94A582458A337006EF958 /* View Controllers */,
@@ -80,8 +84,8 @@
 		79F94A582458A337006EF958 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				79F94A6224593373006EF958 /* HolesTableViewController.swift */,
 				79F94A4E24588A6B006EF958 /* DiscGolfTableViewController.swift */,
-				79F94A542458A2C6006EF958 /* HolesViewController.swift */,
 				79F94A5024588AAA006EF958 /* NewGameViewController.swift */,
 			);
 			path = "View Controllers";
@@ -112,9 +116,24 @@
 			isa = PBXGroup;
 			children = (
 				7907E0A424539B5900801B30 /* Main.storyboard */,
-				79F94A5E2458A6D0006EF958 /*  NewGame.swift */,
 			);
 			path = Storybaords;
+			sourceTree = "<group>";
+		};
+		79F94A64245A0793006EF958 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79F94A602458C5FC006EF958 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79F94A65245A0AD8006EF958 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79F94A66245A0B00006EF958 /* GameController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,11 +209,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7907E09F24539B5900801B30 /* AppDelegate.swift in Sources */,
+				79F94A6324593373006EF958 /* HolesTableViewController.swift in Sources */,
 				79F94A5124588AAA006EF958 /* NewGameViewController.swift in Sources */,
 				79F94A572458A2EE006EF958 /* HolesTableViewCell.swift in Sources */,
-				79F94A552458A2C6006EF958 /* HolesViewController.swift in Sources */,
+				79D9F7C1245A18BF00860B97 /* GameController.swift in Sources */,
+				79F94A612458C5FC006EF958 /* Game.swift in Sources */,
 				7907E0A124539B5900801B30 /* SceneDelegate.swift in Sources */,
-				79F94A5F2458A6D0006EF958 /*  NewGame.swift in Sources */,
 				79F94A532458A293006EF958 /* GamesTableViewCell.swift in Sources */,
 				79F94A4F24588A6B006EF958 /* DiscGolfTableViewController.swift in Sources */,
 			);

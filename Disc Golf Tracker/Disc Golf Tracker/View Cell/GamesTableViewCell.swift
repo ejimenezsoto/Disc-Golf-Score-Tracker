@@ -16,7 +16,8 @@ class GamesTableViewCell: UITableViewCell {
     @IBOutlet weak var numberOfHolesTableLabel: UILabel!
     @IBOutlet weak var dateTableLabel: UILabel!
     
-    var newGame: NewGame? {
+    let timeStamp = "\(DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .short))"
+    var game: Game? {
         didSet {
             updateViews()
         }
@@ -24,11 +25,11 @@ class GamesTableViewCell: UITableViewCell {
     }
     
     func updateViews() {
-        if let newgame = newGame {
-            NameTableViewLabel.text = newGame?.courseName
-            playersTableViewLabel.text = newGame?.numberOfPlayers
-            numberOfHolesTableLabel.text = newGame?.numberOfHoles
-            
+        if let game = game  {
+            NameTableViewLabel.text = "\(game.name) Disc Golf Course"
+            playersTableViewLabel.text = "\(String(game.numPlayers)) Players"
+            numberOfHolesTableLabel.text = "\(String(game.numHoles)) Holes"
+            dateTableLabel.text = timeStamp
         }
     }
 }

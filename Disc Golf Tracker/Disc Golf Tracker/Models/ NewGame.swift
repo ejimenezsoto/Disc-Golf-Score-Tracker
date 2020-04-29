@@ -10,10 +10,10 @@ import Foundation
 
 class NewGame {
     var courseName: String
-    var numberOfHoles: String
-    var numberOfPlayers: String
+    var numberOfHoles: Int
+    var numberOfPlayers: Int
     
-    init(courseName: String, numberOfHoles: String, numberOfPlayers: String){
+    init(courseName: String, numberOfHoles: Int, numberOfPlayers: Int){
         self.courseName = courseName
         self.numberOfHoles = numberOfHoles
         self.numberOfPlayers = numberOfPlayers
