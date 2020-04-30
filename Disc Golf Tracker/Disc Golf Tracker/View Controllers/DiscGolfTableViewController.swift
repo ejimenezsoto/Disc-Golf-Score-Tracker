@@ -13,6 +13,7 @@ class DiscGolfTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+              gameController.loadFromPersistentStore()
         tableView.reloadData()
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,6 +25,8 @@ class DiscGolfTableViewController: UITableViewController {
         
         let game = gameController.games[indexPath.row]
         cell.game = game
+       
+        gameController.loadFromPersistentStore()
         return cell
     }
     
@@ -32,6 +35,8 @@ class DiscGolfTableViewController: UITableViewController {
             guard let newGameVC = segue.destination as? NewGameViewController else {return}
             
             newGameVC.delegate = self
+            
+                  gameController.loadFromPersistentStore()
         }
         else if segue.identifier == "showHolesSegue"{
             guard let holesVC = segue.destination as? HolesTableViewController,
@@ -40,6 +45,9 @@ class DiscGolfTableViewController: UITableViewController {
             
             holesVC.game = gameController.games[indexPath.row]
             holesVC.gameController = self.gameController
+            
+            
+                  gameController.loadFromPersistentStore()
             
         }
     }

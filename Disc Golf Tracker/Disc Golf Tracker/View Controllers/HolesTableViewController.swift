@@ -57,8 +57,8 @@ class HolesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         guard let gameIndex = self.gameIndex else { return 0 }
-        gameController?.loadFromPersistentStore()
         gameController?.saveToPersistentStore()
+        gameController?.loadFromPersistentStore()
         return gameController?.games[gameIndex].holes.count ?? 0
         
         
@@ -74,8 +74,9 @@ class HolesTableViewController: UITableViewController {
         cell.delegate = self
         cell.currentPlayer = currentPlayer
         cell.hole = hole
-        gameController?.loadFromPersistentStore()
         gameController?.saveToPersistentStore()
+        gameController?.loadFromPersistentStore()
+        
         return cell
     }
 }
@@ -84,8 +85,9 @@ extension HolesTableViewController: HolesTableViewCellDelegate {
     func strokesEdited(hole: Hole, player: Int, strokes: Int) {
         guard let game = game else { return }
         gameController?.updateStrokes(for: hole, player: player, game: game, strokes: strokes)
-        gameController?.loadFromPersistentStore()
         gameController?.saveToPersistentStore()
+        gameController?.loadFromPersistentStore()
+        
     }
     
     func parEdited(par: Int) {
