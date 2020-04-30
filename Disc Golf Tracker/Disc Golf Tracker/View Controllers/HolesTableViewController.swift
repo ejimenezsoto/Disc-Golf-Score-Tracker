@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol  AddGameDelegate {
+    func newGameWasAdded(newGame: Game)
+}
+
 class HolesTableViewController: UITableViewController {
     
     //MARK: - IBOutlets
@@ -39,6 +43,8 @@ class HolesTableViewController: UITableViewController {
         self.currentPlayer = mySegmentedControl.selectedSegmentIndex
         print (mySegmentedControl.selectedSegmentIndex)
     }
+    var delegate: AddGameDelegate?
+    
     
     
     // MARK: - Table view data source
@@ -51,7 +57,12 @@ class HolesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         guard let gameIndex = self.gameIndex else { return 0 }
+        gameController?.loadFromPersistentStore()
+        gameController?.saveToPersistentStore()
         return gameController?.games[gameIndex].holes.count ?? 0
+        
+        
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -63,6 +74,8 @@ class HolesTableViewController: UITableViewController {
         cell.delegate = self
         cell.currentPlayer = currentPlayer
         cell.hole = hole
+        gameController?.loadFromPersistentStore()
+        gameController?.saveToPersistentStore()
         return cell
     }
 }
@@ -71,7 +84,8 @@ extension HolesTableViewController: HolesTableViewCellDelegate {
     func strokesEdited(hole: Hole, player: Int, strokes: Int) {
         guard let game = game else { return }
         gameController?.updateStrokes(for: hole, player: player, game: game, strokes: strokes)
-        
+        gameController?.loadFromPersistentStore()
+        gameController?.saveToPersistentStore()
     }
     
     func parEdited(par: Int) {

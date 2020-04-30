@@ -282,7 +282,11 @@
                                 <action selector="segmentedValueChanged:" destination="nCx-rA-Zrj" eventType="valueChanged" id="M1g-oS-5Fl"/>
                             </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="mPi-ES-jsW"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="mPi-ES-jsW">
+                            <connections>
+                                <action selector="saveGame:" destination="nCx-rA-Zrj" id="QwP-LY-WNO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mySegmentedControl" destination="OZ2-cA-FaA" id="Qnh-Gh-Xlv"/>
@@ -291,7 +295,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lvq-CZ-mEX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1667" y="691"/>
+            <point key="canvasLocation" x="1667" y="697"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hH0-Vc-e7p">
