@@ -31,14 +31,21 @@ class HolesTableViewCell: UITableViewCell {
     var delegate: HolesTableViewCellDelegate?
     
     func updateViews() {
-        guard let hole = hole else { return }
+        guard let hole = hole,
+            let currentPlayer = currentPlayer else { return }
         holeNumberLabel.text = "Hole \(hole.number)"
-        strokesTextField.text = "\(hole.strokes[0] ?? 0)"
+        
+        var strokesText = ""
+        if let strokesInt = hole.strokes[currentPlayer] {
+           strokesText = String(strokesInt)
+        }
+        strokesTextField.text = strokesText
         parTextField.text = "\(hole.par)"
     }
     
     @IBAction func holesEdited(_ sender: UITextField) {
         guard let strokesText = strokesTextField.text,
+            !strokesText.isEmpty,
             let strokes = Int(strokesText),
             let hole = hole,
             let player = currentPlayer else { return }

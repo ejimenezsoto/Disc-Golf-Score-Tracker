@@ -106,8 +106,8 @@
 		79F94A5A2458A368006EF958 /* View Cell */ = {
 			isa = PBXGroup;
 			children = (
-				79F94A562458A2EE006EF958 /* HolesTableViewCell.swift */,
 				79F94A522458A293006EF958 /* GamesTableViewCell.swift */,
+				79F94A562458A2EE006EF958 /* HolesTableViewCell.swift */,
 			);
 			path = "View Cell";
 			sourceTree = "<group>";

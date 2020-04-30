@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Hole: Codable, Equatable {
+struct Hole: Codable {
     let number: Int
     var par: Int = 3
     var strokes: [Int?] = []
@@ -20,6 +20,11 @@ struct Hole: Codable, Equatable {
         }
         self.strokes = newStrokes
         self.number = holeNum
+    }
+}
+extension Hole: Equatable {
+    static func == (lhs: Hole, rhs: Hole) -> Bool {
+        return lhs.number == rhs.number
     }
 }
 

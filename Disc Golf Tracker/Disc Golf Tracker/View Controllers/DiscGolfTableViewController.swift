@@ -39,6 +39,7 @@ class DiscGolfTableViewController: UITableViewController {
                 else {return}
             
             holesVC.game = gameController.games[indexPath.row]
+            holesVC.gameController = self.gameController
             
         }
     }

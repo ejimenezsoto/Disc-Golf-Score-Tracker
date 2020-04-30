@@ -9,7 +9,7 @@
 import Foundation
 
 class GameController {
-    private (set) var games: [Game] = [Game(numHoles: 18, numPlayers: 2, name: "DeLa Vega")]
+    private (set) var games: [Game] = [Game(numHoles: 18, numPlayers: 4, name: "DeLa Vega")]
     
     init () {
     }
