@@ -282,11 +282,6 @@
                                 <action selector="segmentedValueChanged:" destination="nCx-rA-Zrj" eventType="valueChanged" id="M1g-oS-5Fl"/>
                             </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="mPi-ES-jsW">
-                            <connections>
-                                <action selector="saveGame:" destination="nCx-rA-Zrj" id="QwP-LY-WNO"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mySegmentedControl" destination="OZ2-cA-FaA" id="Qnh-Gh-Xlv"/>
