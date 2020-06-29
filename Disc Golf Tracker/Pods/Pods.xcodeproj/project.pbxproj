@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		297F85DE0BF70E0BBCFC55A4EABE3AF7 /* ViewAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3204AE7C8CBFDADB8C9486D601925D6 /* ViewAnimator-dummy.m */; };
+		2AC30876C833990D744C30FF47B32EE8 /* UICollectionView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB83B1720F4536FC49248A463C2E651D /* UICollectionView + ViewAnimator.swift */; };
+		3D24A0293788B6740CA06D127A930F02 /* UITableView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B9574F8E1248AAC578448725792437 /* UITableView + ViewAnimator.swift */; };
+		44A41A19C4EBB3E69F800EF54C82A661 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BDAD49AF860F327B8C40304480C23 /* Direction.swift */; };
+		46935F12196B8113019740EA716549BB /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24D97F30FB89D9E59D555329176B92 /* ViewAnimator.swift */; };
+		58CDDC315D072611DC4E0E8D7B2B399B /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F5610881C692164CB7F8F5FC2FDE5 /* Animation.swift */; };
+		6C72E988C04C3F87D6C0306DF85C4705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		86E16112E3DA618AA6046E09E11B1FD5 /* ViewAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CD54566565311AC2C94311ECFF5090B /* ViewAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A469509AEC8465E65F816E8C60217BDD /* Pods-Disc Golf Tracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCB6DD57B07E4528CB0FEC26D9E308BA /* Pods-Disc Golf Tracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD6DCC1280FBF8802E8256E27E72608D /* ViewAnimatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433A7971CDF9F722EBEF1243F86111D /* ViewAnimatorConfig.swift */; };
+		DCD7331015177F0CFD931DFF67C31C3E /* Pods-Disc Golf Tracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D2D74B72121C54E7DAECB8CDBB57C7 /* Pods-Disc Golf Tracker-dummy.m */; };
+		FAEF1099AAE09E57DB622977FD51073A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		FB5B2EF00978168F84353DD89B808567 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570E89F001E8B2CF5C65D32C22A9D4B /* AnimationType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		682EA4D9E0C625D71A83B0C758D29E89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91BFC2827E7E6E2B51AB2CFF58AC6317;
+			remoteInfo = ViewAnimator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BC0DF01E7A15F85359341A26559A50A /* ViewAnimator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewAnimator.debug.xcconfig; sourceTree = "<group>"; };
+		2E758FF25DB88158D2FC308C465FDFDA /* Pods-Disc Golf Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Disc Golf Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		356F5610881C692164CB7F8F5FC2FDE5 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = ViewAnimator/Classes/Protocols/Animation.swift; sourceTree = "<group>"; };
+		3D5BDAD49AF860F327B8C40304480C23 /* Direction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Direction.swift; path = ViewAnimator/Classes/Models/Direction.swift; sourceTree = "<group>"; };
+		3F2CC74B145C14988E8A88E2A154AA9B /* Pods-Disc Golf Tracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Disc Golf Tracker-acknowledgements.plist"; sourceTree = "<group>"; };
+		412D3FEE3B6DB49DAE4469E9384BDA53 /* Pods-Disc Golf Tracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Disc Golf Tracker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4C18BDDA7552F701729C801006B4A86E /* Pods-Disc Golf Tracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Disc Golf Tracker.modulemap"; sourceTree = "<group>"; };
+		582EFEB5CCB51F822EDC102CA3F4454E /* ViewAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ViewAnimator.modulemap; sourceTree = "<group>"; };
+		7CA948B6418EAD449DE0418D6E8E8214 /* ViewAnimator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ViewAnimator-Info.plist"; sourceTree = "<group>"; };
+		7CD54566565311AC2C94311ECFF5090B /* ViewAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-umbrella.h"; sourceTree = "<group>"; };
+		8721EB4F0119E9F03C1C8612AEF53CF3 /* ViewAnimator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewAnimator.release.xcconfig; sourceTree = "<group>"; };
+		94D2D74B72121C54E7DAECB8CDBB57C7 /* Pods-Disc Golf Tracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Disc Golf Tracker-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2B9574F8E1248AAC578448725792437 /* UITableView + ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView + ViewAnimator.swift"; path = "ViewAnimator/Classes/Extensions/UITableView + ViewAnimator.swift"; sourceTree = "<group>"; };
+		A6E0F80D4C07DDA654AF137973BB9C13 /* Pods-Disc Golf Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Disc Golf Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ViewAnimator.framework; path = ViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB24D97F30FB89D9E59D555329176B92 /* ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimator.swift; path = ViewAnimator/Classes/ViewAnimator.swift; sourceTree = "<group>"; };
+		AB83B1720F4536FC49248A463C2E651D /* UICollectionView + ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView + ViewAnimator.swift"; path = "ViewAnimator/Classes/Extensions/UICollectionView + ViewAnimator.swift"; sourceTree = "<group>"; };
+		B3204AE7C8CBFDADB8C9486D601925D6 /* ViewAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ViewAnimator-dummy.m"; sourceTree = "<group>"; };
+		B570E89F001E8B2CF5C65D32C22A9D4B /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = ViewAnimator/Classes/Models/AnimationType.swift; sourceTree = "<group>"; };
+		CCB6DD57B07E4528CB0FEC26D9E308BA /* Pods-Disc Golf Tracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Disc Golf Tracker-umbrella.h"; sourceTree = "<group>"; };
+		D16DF8FE830580D466CF934FD949BEF9 /* Pods-Disc Golf Tracker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Disc Golf Tracker-frameworks.sh"; sourceTree = "<group>"; };
+		DE0D7F99891721D20188A55472663091 /* ViewAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-prefix.pch"; sourceTree = "<group>"; };
+		E433A7971CDF9F722EBEF1243F86111D /* ViewAnimatorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimatorConfig.swift; path = ViewAnimator/Classes/ViewAnimatorConfig.swift; sourceTree = "<group>"; };
+		E4D4145C15E0F21A52851926380C40EC /* Pods-Disc Golf Tracker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Disc Golf Tracker-Info.plist"; sourceTree = "<group>"; };
+		FC5A6A8A074D5F1222D78EF437518830 /* Pods_Disc_Golf_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Disc_Golf_Tracker.framework; path = "Pods-Disc Golf Tracker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4737384C50754117BBA6E09DA24FCD1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEF1099AAE09E57DB622977FD51073A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F8CEE48F5E5B43BF343771890BDE66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C72E988C04C3F87D6C0306DF85C4705 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EA5DCBE636C01B11EE3E3FDE4982A07 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DCC093CAF3DF12BABCDD25BDB6AD0B6 /* Pods-Disc Golf Tracker */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		540A2B98E23DC2EAD5635496DD23BD76 /* ViewAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				356F5610881C692164CB7F8F5FC2FDE5 /* Animation.swift */,
+				B570E89F001E8B2CF5C65D32C22A9D4B /* AnimationType.swift */,
+				3D5BDAD49AF860F327B8C40304480C23 /* Direction.swift */,
+				AB83B1720F4536FC49248A463C2E651D /* UICollectionView + ViewAnimator.swift */,
+				A2B9574F8E1248AAC578448725792437 /* UITableView + ViewAnimator.swift */,
+				AB24D97F30FB89D9E59D555329176B92 /* ViewAnimator.swift */,
+				E433A7971CDF9F722EBEF1243F86111D /* ViewAnimatorConfig.swift */,
+				B919BDA1D35EB975BE2ADB606C166D65 /* Support Files */,
+			);
+			name = ViewAnimator;
+			path = ViewAnimator;
+			sourceTree = "<group>";
+		};
+		9DCC093CAF3DF12BABCDD25BDB6AD0B6 /* Pods-Disc Golf Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				4C18BDDA7552F701729C801006B4A86E /* Pods-Disc Golf Tracker.modulemap */,
+				412D3FEE3B6DB49DAE4469E9384BDA53 /* Pods-Disc Golf Tracker-acknowledgements.markdown */,
+				3F2CC74B145C14988E8A88E2A154AA9B /* Pods-Disc Golf Tracker-acknowledgements.plist */,
+				94D2D74B72121C54E7DAECB8CDBB57C7 /* Pods-Disc Golf Tracker-dummy.m */,
+				D16DF8FE830580D466CF934FD949BEF9 /* Pods-Disc Golf Tracker-frameworks.sh */,
+				E4D4145C15E0F21A52851926380C40EC /* Pods-Disc Golf Tracker-Info.plist */,
+				CCB6DD57B07E4528CB0FEC26D9E308BA /* Pods-Disc Golf Tracker-umbrella.h */,
+				A6E0F80D4C07DDA654AF137973BB9C13 /* Pods-Disc Golf Tracker.debug.xcconfig */,
+				2E758FF25DB88158D2FC308C465FDFDA /* Pods-Disc Golf Tracker.release.xcconfig */,
+			);
+			name = "Pods-Disc Golf Tracker";
+			path = "Target Support Files/Pods-Disc Golf Tracker";
+			sourceTree = "<group>";
+		};
+		A434F05D140E5E5C3645F2A8E5913DAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC5A6A8A074D5F1222D78EF437518830 /* Pods_Disc_Golf_Tracker.framework */,
+				A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B919BDA1D35EB975BE2ADB606C166D65 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				582EFEB5CCB51F822EDC102CA3F4454E /* ViewAnimator.modulemap */,
+				B3204AE7C8CBFDADB8C9486D601925D6 /* ViewAnimator-dummy.m */,
+				7CA948B6418EAD449DE0418D6E8E8214 /* ViewAnimator-Info.plist */,
+				DE0D7F99891721D20188A55472663091 /* ViewAnimator-prefix.pch */,
+				7CD54566565311AC2C94311ECFF5090B /* ViewAnimator-umbrella.h */,
+				2BC0DF01E7A15F85359341A26559A50A /* ViewAnimator.debug.xcconfig */,
+				8721EB4F0119E9F03C1C8612AEF53CF3 /* ViewAnimator.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ViewAnimator";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E6BA684889DD8EBE84092F2003467BF1 /* Pods */,
+				A434F05D140E5E5C3645F2A8E5913DAA /* Products */,
+				4EA5DCBE636C01B11EE3E3FDE4982A07 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6BA684889DD8EBE84092F2003467BF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				540A2B98E23DC2EAD5635496DD23BD76 /* ViewAnimator */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9A71283B05E020308AEDA66A9C9AC953 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A469509AEC8465E65F816E8C60217BDD /* Pods-Disc Golf Tracker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01257361E898E374FB0A6911FB063C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86E16112E3DA618AA6046E09E11B1FD5 /* ViewAnimator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8B9F655BFCE0342D6C2943A4AA8CEA4B /* Pods-Disc Golf Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 660F366982F46553C25977FFE975F728 /* Build configuration list for PBXNativeTarget "Pods-Disc Golf Tracker" */;
+			buildPhases = (
+				9A71283B05E020308AEDA66A9C9AC953 /* Headers */,
+				F4EC3F08AE45417A56806D650BB4461A /* Sources */,
+				4737384C50754117BBA6E09DA24FCD1E /* Frameworks */,
+				A9AE2EBA9CFC2EE52FEB82D321F7C2EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A75289C2F129D022780CE9D87815EF69 /* PBXTargetDependency */,
+			);
+			name = "Pods-Disc Golf Tracker";
+			productName = "Pods-Disc Golf Tracker";
+			productReference = FC5A6A8A074D5F1222D78EF437518830 /* Pods_Disc_Golf_Tracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EFE5199A9D90502DB139AEABA7CBE7B /* Build configuration list for PBXNativeTarget "ViewAnimator" */;
+			buildPhases = (
+				C01257361E898E374FB0A6911FB063C7 /* Headers */,
+				3A823987FFCB5C3726EBB7A32E3B904E /* Sources */,
+				D2F8CEE48F5E5B43BF343771890BDE66 /* Frameworks */,
+				2954910303CBA399A078839A2F6CEC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewAnimator;
+			productName = ViewAnimator;
+			productReference = A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A434F05D140E5E5C3645F2A8E5913DAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B9F655BFCE0342D6C2943A4AA8CEA4B /* Pods-Disc Golf Tracker */,
+				91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2954910303CBA399A078839A2F6CEC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AE2EBA9CFC2EE52FEB82D321F7C2EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A823987FFCB5C3726EBB7A32E3B904E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CDDC315D072611DC4E0E8D7B2B399B /* Animation.swift in Sources */,
+				FB5B2EF00978168F84353DD89B808567 /* AnimationType.swift in Sources */,
+				44A41A19C4EBB3E69F800EF54C82A661 /* Direction.swift in Sources */,
+				2AC30876C833990D744C30FF47B32EE8 /* UICollectionView + ViewAnimator.swift in Sources */,
+				3D24A0293788B6740CA06D127A930F02 /* UITableView + ViewAnimator.swift in Sources */,
+				297F85DE0BF70E0BBCFC55A4EABE3AF7 /* ViewAnimator-dummy.m in Sources */,
+				46935F12196B8113019740EA716549BB /* ViewAnimator.swift in Sources */,
+				BD6DCC1280FBF8802E8256E27E72608D /* ViewAnimatorConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4EC3F08AE45417A56806D650BB4461A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD7331015177F0CFD931DFF67C31C3E /* Pods-Disc Golf Tracker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A75289C2F129D022780CE9D87815EF69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViewAnimator;
+			target = 91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */;
+			targetProxy = 682EA4D9E0C625D71A83B0C758D29E89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1AEC8811CD04A1575D6F1863CE81DA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BC0DF01E7A15F85359341A26559A50A /* ViewAnimator.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewAnimator/ViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewAnimator/ViewAnimator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ViewAnimator/ViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = ViewAnimator;
+				PRODUCT_NAME = ViewAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5768B4E5F7F8D2553B525AECC9A45FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8721EB4F0119E9F03C1C8612AEF53CF3 /* ViewAnimator.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewAnimator/ViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewAnimator/ViewAnimator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ViewAnimator/ViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = ViewAnimator;
+				PRODUCT_NAME = ViewAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AEB8558C455A1C7F0F0CD2284E1E8640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E0F80D4C07DDA654AF137973BB9C13 /* Pods-Disc Golf Tracker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Disc Golf Tracker/Pods-Disc Golf Tracker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Disc Golf Tracker/Pods-Disc Golf Tracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E798987C30C0B912708F217129E7FDA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E758FF25DB88158D2FC308C465FDFDA /* Pods-Disc Golf Tracker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Disc Golf Tracker/Pods-Disc Golf Tracker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Disc Golf Tracker/Pods-Disc Golf Tracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		660F366982F46553C25977FFE975F728 /* Build configuration list for PBXNativeTarget "Pods-Disc Golf Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEB8558C455A1C7F0F0CD2284E1E8640 /* Debug */,
+				E798987C30C0B912708F217129E7FDA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EFE5199A9D90502DB139AEABA7CBE7B /* Build configuration list for PBXNativeTarget "ViewAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEC8811CD04A1575D6F1863CE81DA4A /* Debug */,
+				5768B4E5F7F8D2553B525AECC9A45FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

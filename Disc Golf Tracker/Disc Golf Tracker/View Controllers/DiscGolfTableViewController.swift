@@ -23,6 +23,8 @@ class DiscGolfTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "GamesTableViewCell", for: indexPath) as? GamesTableViewCell else {fatalError("oops")}
         
+        
+        
         let game = gameController.games[indexPath.row]
         cell.game = game
        

@@ -1,0 +1,6 @@
+framework module Pods_Disc_Golf_Tracker {
+  umbrella header "Pods-Disc Golf Tracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

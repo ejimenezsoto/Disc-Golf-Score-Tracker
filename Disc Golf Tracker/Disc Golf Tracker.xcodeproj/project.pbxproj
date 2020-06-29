@@ -20,9 +20,11 @@
 		79F94A5D2458A3DE006EF958 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F94A5C2458A3DE006EF958 /* Default-568h@2x.png */; };
 		79F94A612458C5FC006EF958 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A602458C5FC006EF958 /* Game.swift */; };
 		79F94A6324593373006EF958 /* HolesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F94A6224593373006EF958 /* HolesTableViewController.swift */; };
+		A33E1F41D5E9085CA24D8F64 /* Pods_Disc_Golf_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA6A4C47519FE0CB25078E0 /* Pods_Disc_Golf_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031442D20C3F4CC1121439D2 /* Pods-Disc Golf Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disc Golf Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Disc Golf Tracker/Pods-Disc Golf Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		7907E09B24539B5900801B30 /* Disc Golf Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Disc Golf Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7907E09E24539B5900801B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7907E0A024539B5900801B30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		79F94A602458C5FC006EF958 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		79F94A6224593373006EF958 /* HolesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolesTableViewController.swift; sourceTree = "<group>"; };
 		79F94A66245A0B00006EF958 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		7CAAAF051FE80CF047BAA8E5 /* Pods-Disc Golf Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disc Golf Tracker.release.xcconfig"; path = "Target Support Files/Pods-Disc Golf Tracker/Pods-Disc Golf Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		CBA6A4C47519FE0CB25078E0 /* Pods_Disc_Golf_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Disc_Golf_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,18 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33E1F41D5E9085CA24D8F64 /* Pods_Disc_Golf_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7848FEBE12A48A9528FEADB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBA6A4C47519FE0CB25078E0 /* Pods_Disc_Golf_Tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7907E09224539B5900801B30 = {
 			isa = PBXGroup;
 			children = (
 				79F94A5C2458A3DE006EF958 /* Default-568h@2x.png */,
 				7907E09D24539B5900801B30 /* Disc Golf Tracker */,
 				7907E09C24539B5900801B30 /* Products */,
+				ABF11CB34D6A6F0FC7CA3D2A /* Pods */,
+				7848FEBE12A48A9528FEADB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +151,16 @@
 			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
+		ABF11CB34D6A6F0FC7CA3D2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				031442D20C3F4CC1121439D2 /* Pods-Disc Golf Tracker.debug.xcconfig */,
+				7CAAAF051FE80CF047BAA8E5 /* Pods-Disc Golf Tracker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7907E0AF24539B5A00801B30 /* Build configuration list for PBXNativeTarget "Disc Golf Tracker" */;
 			buildPhases = (
+				1BC72360668FC5990BDE4CBE /* [CP] Check Pods Manifest.lock */,
 				7907E09724539B5900801B30 /* Sources */,
 				7907E09824539B5900801B30 /* Frameworks */,
 				7907E09924539B5900801B30 /* Resources */,
+				1D8040C1E865B92C9B23ADAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +229,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BC72360668FC5990BDE4CBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Disc Golf Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D8040C1E865B92C9B23ADAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Disc Golf Tracker/Pods-Disc Golf Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Disc Golf Tracker/Pods-Disc Golf Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Disc Golf Tracker/Pods-Disc Golf Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7907E09724539B5900801B30 /* Sources */ = {
@@ -358,6 +427,7 @@
 		};
 		7907E0B024539B5A00801B30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031442D20C3F4CC1121439D2 /* Pods-Disc Golf Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +446,7 @@
 		};
 		7907E0B124539B5A00801B30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CAAAF051FE80CF047BAA8E5 /* Pods-Disc Golf Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
