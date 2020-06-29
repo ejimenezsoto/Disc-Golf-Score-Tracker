@@ -52,4 +52,14 @@ class HolesTableViewCell: UITableViewCell {
         delegate?.strokesEdited(hole: hole,player: player, strokes: strokes)
     }
     
+    @IBAction func parEdited(_ sender: UITextField) {
+        guard let parText = parTextField.text, !parText.isEmpty,
+        let par = Int(parText),
+        let hole = hole,
+            let player = currentPlayer else {return}
+        delegate?.parEdited(par: par)
+        
+    }
+    
+    
 }

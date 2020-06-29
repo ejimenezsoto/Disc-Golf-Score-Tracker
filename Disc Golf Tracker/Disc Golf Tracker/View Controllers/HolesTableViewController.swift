@@ -14,6 +14,8 @@ protocol  AddGameDelegate {
 
 class HolesTableViewController: UITableViewController {
     
+    
+    
     //MARK: - IBOutlets
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     @IBOutlet weak var myTableView: UITableView!
@@ -37,11 +39,17 @@ class HolesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print (mySegmentedControl.selectedSegmentIndex)
+        gameController?.loadFromPersistentStore()
+        gameController?.saveToPersistentStore()
     }
     
     @IBAction func segmentedValueChanged(_ sender: Any) {
+        
+        
         self.currentPlayer = mySegmentedControl.selectedSegmentIndex
         print (mySegmentedControl.selectedSegmentIndex)
+        gameController?.saveToPersistentStore()
+        gameController?.loadFromPersistentStore()
     }
     var delegate: AddGameDelegate?
     

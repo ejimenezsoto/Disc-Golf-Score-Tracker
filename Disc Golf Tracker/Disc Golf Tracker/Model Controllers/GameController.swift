@@ -22,7 +22,7 @@ class GameController {
        saveToPersistentStore()
         return game
     }
-    @discardableResult public func addGame(name: String, numPlayers: Int, numHoles: Int) -> Game {
+    @discardableResult public func addGame(name: String, numPlayers: Int, numHoles: Int, par: Int) -> Game {
         let game = Game(numHoles: numHoles, numPlayers: numPlayers, name: name)
         games.append(game)
        saveToPersistentStore()
