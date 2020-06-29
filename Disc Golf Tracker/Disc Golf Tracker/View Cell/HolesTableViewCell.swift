@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HolesTableViewCellDelegate {
-    func strokesEdited(hole: Hole, player: Int, strokes: Int)
+    func strokesEdited(hole: Hole, player: Int, strokes: Int, par: Int)
     func parEdited(par: Int)
 }
 
@@ -40,16 +40,26 @@ class HolesTableViewCell: UITableViewCell {
            strokesText = String(strokesInt)
         }
         strokesTextField.text = strokesText
-        parTextField.text = "\(hole.par)"
+        
+        var parText = ""
+        if let parInt = hole.par[currentPlayer] {
+           parText = String(parInt)
+        }
+        strokesTextField.text = strokesText
+        
     }
     
     @IBAction func holesEdited(_ sender: UITextField) {
         guard let strokesText = strokesTextField.text,
             !strokesText.isEmpty,
+       let parText = parTextField.text,
+            !parText.isEmpty,
             let strokes = Int(strokesText),
             let hole = hole,
+            let par = Int(parText),
             let player = currentPlayer else { return }
-        delegate?.strokesEdited(hole: hole,player: player, strokes: strokes)
+        
+        delegate?.strokesEdited(hole: hole,player: player, strokes: strokes, par: par)
     }
     
     @IBAction func parEdited(_ sender: UITextField) {

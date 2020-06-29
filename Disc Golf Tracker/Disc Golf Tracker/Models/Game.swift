@@ -10,17 +10,22 @@ import Foundation
 
 struct Hole: Codable {
     let number: Int
-    var par: Int
+    var par: [Int?] = []
     var strokes: [Int?] = []
     
-    init (holeNum: Int, numPlayers: Int, par: Int) {
+    init (holeNum: Int, numPlayers: Int) {
         var newStrokes = Array<Int?>()
+        var newPar = Array<Int?>()
         for _ in (0..<numPlayers) {
             newStrokes.append(nil)
         }
+        for _ in(0..<numPlayers) {
+            newPar.append(nil)
+        }
         self.strokes = newStrokes
         self.number = holeNum
-        self.par = par
+        self.par = newPar
+        
     }
 }
 extension Hole: Equatable {
@@ -41,7 +46,7 @@ struct Game : Codable {
         self.name = name
         var newHoles: [Hole] = Array<Hole>()
         for holeNum in (1...numHoles) {
-            let newHole = Hole(holeNum: holeNum, numPlayers: numPlayers, par: 3 )
+            let newHole = Hole(holeNum: holeNum, numPlayers: numPlayers)
             newHoles.append(newHole)
         }
         holes = newHoles

@@ -31,10 +31,12 @@ class GameController {
     
     //Read?
     //Update?
-    func updateStrokes(for hole: Hole, player: Int, game: Game, strokes: Int) {
+    func updateStrokes(for hole: Hole, player: Int, game: Game, strokes: Int, par: Int) {
         guard let gameIndex = games.firstIndex(of: game),
             let holeIndex = games[gameIndex].holes.firstIndex(of: hole) else { return }
         games[gameIndex].holes[holeIndex].strokes[player] = strokes
+        games[gameIndex].holes[holeIndex].par[player] = par
+        saveToPersistentStore()
     }
     
     //Delete?

@@ -40,7 +40,7 @@ class HolesTableViewController: UITableViewController {
         super.viewDidLoad()
         print (mySegmentedControl.selectedSegmentIndex)
         gameController?.loadFromPersistentStore()
-        gameController?.saveToPersistentStore()
+     
     }
     
     @IBAction func segmentedValueChanged(_ sender: Any) {
@@ -49,7 +49,7 @@ class HolesTableViewController: UITableViewController {
         self.currentPlayer = mySegmentedControl.selectedSegmentIndex
         print (mySegmentedControl.selectedSegmentIndex)
         gameController?.saveToPersistentStore()
-        gameController?.loadFromPersistentStore()
+        
     }
     var delegate: AddGameDelegate?
     
@@ -90,11 +90,11 @@ class HolesTableViewController: UITableViewController {
 }
 
 extension HolesTableViewController: HolesTableViewCellDelegate {
-    func strokesEdited(hole: Hole, player: Int, strokes: Int) {
+    func strokesEdited(hole: Hole, player: Int, strokes: Int, par: Int) {
         guard let game = game else { return }
-        gameController?.updateStrokes(for: hole, player: player, game: game, strokes: strokes)
+        gameController?.updateStrokes(for: hole, player: player, game: game, strokes: strokes, par: par)
         gameController?.saveToPersistentStore()
-        gameController?.loadFromPersistentStore()
+      
         
     }
     
